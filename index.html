@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Budget Tracker</title>
     <!-- Font Awesome Icons-->
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +26,7 @@
       <div class="container">
         <div class="sub-container">
           <!-- Budget -->
-          <div class="total-amaount-container">
+          <div class="total-amount-container">
             <h3>Budget</h3>
             <p class="hide error" id="budget-error">
               Value cannot be empty or negative
@@ -36,7 +40,7 @@
           </div>
 
           <!-- Expenditure -->
-          <div class="user-amount-sontainer">
+          <div class="user-amount-container">
             <h3>Expenses</h3>
             <p class="hide error" id="product-title-error">
               Values cannot be empty
@@ -52,7 +56,7 @@
               id="user-amount"
               placeholder="Enter Cost of Product"
             />
-            <button class="Submit" id="check-amount">Check Amount</button>
+            <button class="submit" id="check-amount">Check Amount</button>
           </div>
         </div>
         <!-- Output -->
@@ -77,5 +81,7 @@
         <div class="list-container" id="list"></div>
       </div>
     </div>
+    <!-- Script -->
+    <script src="script.js"></script>
   </body>
 </html>
